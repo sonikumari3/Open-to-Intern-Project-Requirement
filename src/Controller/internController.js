@@ -29,7 +29,7 @@ const createIntern = async function (req, res) {
             return res.status(400).send({ status: false, msg: " collegeName is required" });
         }
 
-        // This is the mail format for checking if the inputted email id perfectely formatted or not
+        // This is the mail format for checking if the inputted email id perfectely formatted or not.
         let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         // Checking if the inputted email id perfectely formatted or not
         if (!(data.email.match(mailFormat))) {
