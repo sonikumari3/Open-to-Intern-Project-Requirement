@@ -20,7 +20,7 @@ const createIntern = async function (req, res) {
         if (!validator.isValid(email)) {
             return res.status(400).send({ status: false, msg: " Eamil is required" });
         }
-        // Mobile no is Mandatory
+        // Mobile no is Mandatory.
         if (!validator.isValid(mobile)) {
             return res.status(400).send({ status: false, msg: "Mobile number is required" });
         }
