@@ -20,7 +20,7 @@ const createCollege = async function (req, res) {
         if (!validator.isValid(fullName)) {
             return res.status(400).send({ status: false, msg: "FullName of College is required" });
         }
-        //Logolink is Mandatory
+        //Logolink is Mandatory...
         if (!validator.isValid(logoLink)) {
             return res.status(400).send({ status: false, msg: "logoLink is required" });
         }
